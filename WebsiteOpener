@@ -1,0 +1,32 @@
+Rem Opens Applications 
+
+@echo off
+:start
+
+echo What app would you like to run?
+echo Instagram
+echo Youtube
+echo Facebook
+echo Gmail
+
+set /p input1=App: 
+echo %input1%
+if %input1%==Instagram start chrome.exe
+if %input1%==Youtube start Instagram.url
+if %input1%==Facebook stdart facebook.url
+if %input1%==Gmail start gmail.url
+
+pause
+cls
+
+goto start
+
+
+
+
+
+
+
+
+
+
